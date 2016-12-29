@@ -81,8 +81,9 @@ end
 ```
 
 Finally, run the following command to install it:
-
+```
 $ pod install
+```
 
 <div id='section-id-56'/>
 
@@ -121,7 +122,7 @@ Getting Started
 
 ```ruby
 extension AACoreData {
-static let myEntity = AACoreDataEntity<String>("ExampleEntity")
+    static let myEntity = AACoreDataEntity<String>("ExampleEntity")
 }
 ```
 
@@ -132,7 +133,7 @@ static let myEntity = AACoreDataEntity<String>("ExampleEntity")
 You can access the instance easily by adding this line in specific class or globally anywhere outside the class: 
 
 ```ruby
-let instance = AACoreData.sharedInstance
+let instance = AACoreData.sharedInstance()
 ```
 
 
@@ -147,8 +148,7 @@ If you want to create different name of data model, then you have to specify it 
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
     AACoreData.sharedInstance().dataModel = "ExampleDataModel"
-
-return true
+    return true
 }
 ```
 
