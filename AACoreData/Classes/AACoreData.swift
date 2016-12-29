@@ -1,9 +1,9 @@
 //
 //  AACoreData.swift
-//  AllShore
+//  AA-Creations
 //
-//  Created by Muhammad Ahsan on 20/12/2016.
-//  Copyright © 2016 AllShore. All rights reserved.
+//  Created by Engr. Ahsan Ali on 20/12/2016.
+//  Copyright © 2016 AA-Creations. All rights reserved.
 //
 
 import Foundation
