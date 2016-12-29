@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'AACoreData'
-s.version          = '1.0.0'
+s.version          = '1.0.1'
 s.summary          = 'AACoreData is a lightweight data persistence wrapper designed to provide an easier solution for `CRUD` operations using CoreData in Swift.'
 
 s.description      = <<-DESC
