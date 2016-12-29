@@ -146,7 +146,7 @@ If you want to create different name of data model, then you have to specify it 
 ```ruby
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-AACoreData.dataModel = "ExampleDataModel"
+    AACoreData.sharedInstance().dataModel = "ExampleDataModel"
 
 return true
 }
