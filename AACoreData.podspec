@@ -9,7 +9,7 @@ AACoreData is a lightweight data persistence wrapper designed to provide an easi
 DESC
 
 s.homepage         = 'https://github.com/EngrAhsanAli/AACoreData'
-# s.screenshots     = 'www.example.com/demo.gif'
+s.screenshots     = 'https://github.com/EngrAhsanAli/AACoreData/blob/master/Screenshots/demo.gif'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'Engr. Ahsan Ali' => 'hafiz.m.ahsan.ali@gmail.com' }
 s.source           = { :git => 'https://github.com/EngrAhsanAli/AACoreData.git', :tag => s.version.to_s }
