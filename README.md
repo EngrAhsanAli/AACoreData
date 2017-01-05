@@ -8,6 +8,7 @@
   - [CocoaPods](#section-id-33)
   - [Carthage](#section-id-56)
   - [Manual Installation](#section-id-74)
+- [Getting Started](#section-id-87)
   - [Define entities](#section-id-83)
   - [Shared Instance](#section-id-92)
   - [Creating your own data model](#section-id-102)
@@ -112,7 +113,9 @@ import AACoreData
 Simply copy `Classes/AACoreData.swift` to your Xcode project and that's it!
 
 
-Getting Started
+<div id='section-id-87'/>
+
+#Getting Started
 ----------
 
 
