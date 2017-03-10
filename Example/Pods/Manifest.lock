@@ -1,5 +1,5 @@
 PODS:
-  - AACoreData (1.0.0)
+  - AACoreData (1.0.1)
 
 DEPENDENCIES:
   - AACoreData (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  AACoreData: 7fda8bdd0354bc6d05e873eba0869b96d16a399c
+  AACoreData: 5e978eb9c0b3bea1bb093258269676f29b08417c
 
 PODFILE CHECKSUM: 5c1d21595c9e1dadccec5671fcf73a814b2efbbf
 
-COCOAPODS: 1.2.0.beta.3
+COCOAPODS: 1.2.0
