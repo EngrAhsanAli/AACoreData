@@ -11,13 +11,11 @@ import CoreData
 
 open class AACoreData {
     
-    open class func sharedInstance() -> AACoreData {
-        
-        struct Static {
-            static let instance = AACoreData()
-        }
-        return Static.instance
-    }
+    //MARK: Shared Instance
+    
+    static open let shared : AACoreData = {
+        return AACoreData()
+    }()
     
     open var dataModel = "AACoreData"
     
@@ -66,6 +64,7 @@ open class AACoreData {
         }
         return managedObjectContext!
     }()
+    
     // iOS-10
     @available(iOS 10.0, *)
     lazy var persistentContainer: NSPersistentContainer = {
@@ -77,6 +76,8 @@ open class AACoreData {
         })
         return container
     }()
+    
+    
     // MARK: - Core Data Saving support
     
     open func saveContext () {
@@ -91,22 +92,9 @@ open class AACoreData {
         }
     }
     
-
-}
-
-// MARK:- AACoreData Entities
-open class AACoreDataEntity<String>: AACoreData {
-    open let _entity: String
-    
-    public init(_ entity: String) {
-        self._entity = entity
-        super.init()
-    }
 }
 
 // MARK:- AACoreData Wrapper
-
-
 extension AACoreData {
     
     open func getNewObject(entityName: AACoreDataEntity<String>) -> NSManagedObject {

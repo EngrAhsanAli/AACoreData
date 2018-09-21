@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'AACoreData'
-s.version          = '1.0.1'
+s.version          = '1.0'
 s.summary          = 'AACoreData is a lightweight data persistence wrapper designed to provide an easier solution for `CRUD` operations using CoreData in Swift.'
 
 s.description      = <<-DESC
@@ -13,8 +13,6 @@ s.homepage         = 'https://github.com/EngrAhsanAli/AACoreData'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'Engr. Ahsan Ali' => 'hafiz.m.ahsan.ali@gmail.com' }
 s.source           = { :git => 'https://github.com/EngrAhsanAli/AACoreData.git', :tag => s.version.to_s }
-
-s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
 
 s.ios.deployment_target = '8.0'
 

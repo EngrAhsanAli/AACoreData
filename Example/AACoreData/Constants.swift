@@ -14,7 +14,7 @@ extension AACoreData {
     
     // MARK:- Add your entities here
     
-    static let Example = AACoreDataEntity<String>("ExampleEntity")
+    static let Example = AACoreEntity("ExampleEntity")
     
     
 }

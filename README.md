@@ -25,7 +25,7 @@
 
 #AACoreData
 
-[![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods](https://img.shields.io/cocoapods/v/AACoreData.svg)](http://cocoadocs.org/docsets/AACoreData) [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://github.com/Carthage/Carthage) [![Build Status](https://travis-ci.org/EngrAhsanAli/AACoreData.svg?branch=master)](https://travis-ci.org/EngrAhsanAli/AACoreData) 
+[![Swift 4.0](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods](https://img.shields.io/cocoapods/v/AACoreData.svg)](http://cocoadocs.org/docsets/AACoreData) [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://github.com/Carthage/Carthage) [![Build Status](https://travis-ci.org/EngrAhsanAli/AACoreData.svg?branch=master)](https://travis-ci.org/EngrAhsanAli/AACoreData) 
 ![License MIT](https://img.shields.io/github/license/mashape/apistatus.svg) [![CocoaPods](https://img.shields.io/cocoapods/p/AACoreData.svg)]()
 
 
@@ -76,7 +76,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-pod 'AACoreData', '~> 1.0.1'
+pod 'AACoreData', '~> 1.0'
 end
 
 ```
@@ -125,7 +125,7 @@ Simply copy `Classes/AACoreData.swift` to your Xcode project and that's it!
 
 ```ruby
 extension AACoreData {
-    static let myEntity = AACoreDataEntity<String>("ExampleEntity")
+    static let myEntity = AACoreEntity("ExampleEntity")
 }
 ```
 
@@ -136,7 +136,7 @@ extension AACoreData {
 You can access the instance easily by adding this line in specific class or globally anywhere outside the class: 
 
 ```ruby
-let instance = AACoreData.sharedInstance()
+let instance = AACoreData.shared
 ```
 
 
@@ -150,7 +150,7 @@ If you want to create different name of data model, then you have to specify it 
 ```ruby
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-    AACoreData.sharedInstance().dataModel = "ExampleDataModel"
+    AACoreData.shared.dataModel = "ExampleDataModel"
     return true
 }
 ```

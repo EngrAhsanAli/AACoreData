@@ -12,7 +12,7 @@ import AACoreData
 class TableViewController: UITableViewController {
     
     
-    let instance = AACoreData.sharedInstance()
+    let instance = AACoreData.shared
     
     var itemCounter: Int = 0
     
