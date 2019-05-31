@@ -11,10 +11,11 @@ public typealias AACoreEntity = AACoreDataEntity<String>
 
 // MARK:- AACoreData Entities
 open class AACoreDataEntity<S>: AACoreData {
-    open let _entity: String
+    public let _entity: String
     
     public init(_ entity: String) {
         self._entity = entity
         super.init()
     }
 }
+

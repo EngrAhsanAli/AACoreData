@@ -13,7 +13,7 @@ open class AACoreData {
     
     //MARK: Shared Instance
     
-    static open let shared : AACoreData = {
+    static public let shared : AACoreData = {
         return AACoreData()
     }()
     
